@@ -23,13 +23,38 @@
         </header>
 
         <main>
-            <a href="breed/toy-poodle.html">トイ・プードル</a>
+
+            <section>
+                <h2 class="section-title">1G</h2>
+                <a class="btn" >トイ・プードル</a>
+            
+            </section>
+
+            <section>
+                <h2 class="section-title">2G</h2>
+
+            <!-- 2G -->
+            </section>
+
         </main>
 
 
 
-
     </body>
+
+    <script>
+        window.addEventListener('load', function() {
+
+            const btn = document.getElementsByClassName('btn')[0];
+            console.log(btn);
+            btn.addEventListener('click', function() {
+                btn.classList.toggle('active');
+                // console.log('click');
+            });
+        });
+
+    </script>
+        
 
 
 </html>
